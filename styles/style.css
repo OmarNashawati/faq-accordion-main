@@ -2,19 +2,19 @@
 
 
 main {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 6rem 2rem 2rem 2rem ;
+  
 }
 
 .faqs-card{
   background-color: var(--card-bg);
   max-width: 550px;
+  height: fit-content;
   padding: 2rem;
+  margin: 0 auto;
   border-radius: var(--border-radius);
   box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.1);
-  
+
 }
 
 .faqs-card-header{
@@ -27,7 +27,8 @@ main {
   font-size: 3rem;
 }
 
-.faqs-item-quistion:not(:last-child) {
+
+.faqs-item:not(:last-child) {
   border-bottom: 1px solid var(--pruple-100);
 }
 
@@ -47,6 +48,8 @@ main {
 .faqs-item-awnser {
   display: none;
   font-size: 0.9rem;
+  padding: 1rem 0;
+
 }
 
 .faqs-item-awnser.active{
