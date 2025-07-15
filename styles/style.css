@@ -1,0 +1,58 @@
+@import './base.css';
+
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faqs-card{
+  background-color: var(--card-bg);
+  max-width: 550px;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.1);
+  
+}
+
+.faqs-card-header{
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-head-title{
+  font-size: 3rem;
+}
+
+.faqs-item-quistion:not(:last-child) {
+  border-bottom: 1px solid var(--pruple-100);
+}
+
+.faqs-item-quistion {
+  font-size: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faqs-item-quistion:hover {
+  color: var(--pruple-600);
+}
+
+.faqs-item-awnser {
+  display: none;
+  font-size: 0.9rem;
+}
+
+.faqs-item-awnser.active{
+  display: block;
+}
+
+
+.attribution { font-size: 11px; text-align: center; padding: 1rem 0;}
+.attribution a { color: hsl(228, 45%, 44%); }
